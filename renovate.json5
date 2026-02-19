@@ -14,8 +14,20 @@
       "matchFileNames": ["build-2.gradle"],
       "matchPackageNames": [
         "org.springframework.boot:spring-boot-starter-web",
+        "io.vavr:vavr",
       ],
       "matchUpdateTypes": [ "major" ],
     }
-  ]
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.java$"],
+      "matchStrings": [
+        "new [a-zA-Z]+Container(?:<.*>)?\\(\"(?<depName>.*?):(?<currentValue>.*?)\"\\)",
+        "DockerImageName\\.parse\\(\"(?<depName>[^:]+):(?<currentValue>[^:\"]+)\"\\)"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
 }
