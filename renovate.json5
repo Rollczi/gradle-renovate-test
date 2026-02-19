@@ -10,14 +10,6 @@
       "matchFileNames": ["!build-2.gradle"],
     },
     {
-      "groupName": "Gradle dependencies",
-      "matchFileNames": ["build-2.gradle"],
-      "matchPackageNames": [
-        "org.springframework.boot:spring-boot-starter-web",
-      ],
-      "matchUpdateTypes": [ "patch", "minor" ]
-    },
-    { 
       "groupName": "Test gralde",
       "enabled": false,
       "matchFileNames": ["build-2.gradle"],
