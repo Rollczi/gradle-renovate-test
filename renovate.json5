@@ -7,7 +7,6 @@
     {
       "groupName": "Gradle dependencies",
       "matchManagers": ["gradle"],
-      "matchFileNames": ["!build-2.gradle"],
     },
     {
       "groupName": "Test gralde",
