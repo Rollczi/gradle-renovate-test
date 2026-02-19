@@ -9,6 +9,10 @@
       "matchManagers": ["gradle"],
     },
     {
+      "groupName": "Docker dependencies",
+      "matchDatasources": ["docker"]
+    },
+    {
       "groupName": "Test gralde",
       "enabled": false,
       "matchFileNames": ["build-2.gradle"],
@@ -30,4 +34,5 @@
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
     }
+  ]
 }
