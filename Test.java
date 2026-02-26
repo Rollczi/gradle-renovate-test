@@ -6,16 +6,16 @@
 @Testcontainers
 public class KafkaContainerTest {
 
-    private static final GenericContainer<?> redis = new GenericContainer<>("redis:7.0.5")
+    private static final GenericContainer<?> redis = new GenericContainer<>("redis:7.4.8")
         .withExposedPorts(6379);
 
-    private static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer("postgres:14.1") 
+    private static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer("postgres:14.22") 
         .withDatabaseName("testdb");
 
-    private static final DockerImageName kafkaImage = DockerImageName.parse("confluentinc/cp-kafka:7.2.1"); 
+    private static final DockerImageName kafkaImage = DockerImageName.parse("confluentinc/cp-kafka:7.9.5"); 
     
     @ClassRule
-    public static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:5.2.1"));
+    public static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:5.5.12"));
 
     @Test
     public void testUsage() throws Exception {
