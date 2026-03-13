@@ -12,6 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.5.9'
-    implementation("io.vavr:vavr:0.10.7")
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.5.11'
+    implementation("io.vavr:vavr:0.11.0")
 }
