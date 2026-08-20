@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '4.0.3'
+    id 'org.springframework.boot' version '4.1.1'
     id 'io.spring.dependency-management' version '1.1.7'
     id 'java'
 }
@@ -12,6 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.5.9'
-    implementation("io.vavr:vavr:0.10.7")
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.5.16'
+    implementation("io.vavr:vavr:0.11.0")
 }
