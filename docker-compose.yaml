@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   db:
-    image: postgres:15.3
+    image: postgres:19.0@sha256:4ea94de574c17f0372722806c949757050fbb1cd7648410fe45d6bba275cc00e
     environment:
       POSTGRES_PASSWORD: password
 
